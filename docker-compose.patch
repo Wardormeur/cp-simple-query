@@ -1,0 +1,24 @@
++  rdb:
++    image: postgres:9 
++    restart: always
++    volumes:
++      - pg-data:/data/postgres
++      - ./dump:/db
++      - /var/run/postgresql2:/var/run/postgresql 
++    environment:
++      - POSTGRES_PASSWORD=QdYx3D5y
++      - POSTGRES_USER=platform
++      - POSTGRES_DB=cp-rdb
+
+
++  squery:
++    volumes:
++      - ./workspace-zen/simple-queries:/usr/src/app:Z
++    build:
++      context: ./workspace-zen/simple-queries
++      dockerfile: dev.Dockerfile
++    environment:
++      - POSTGRES_HOST=rdb 
++    depends_on:
++      - rdb
+

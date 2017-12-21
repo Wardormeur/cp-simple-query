@@ -1,0 +1,9 @@
+{
+  "client": "postgres",
+  "connection": {
+    "host": "rdb",
+    "user": "platform",
+    "password": "QdYx3D5y",
+    "database": "cp-rdb"
+  }
+}

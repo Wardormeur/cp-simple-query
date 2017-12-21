@@ -1,0 +1,17 @@
+{
+  "name": "simple-queries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bookshelf": "^0.12.0",
+    "knex": "^0.14.2",
+    "pg": "^7.4.0"
+  }
+}
